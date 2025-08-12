@@ -202,7 +202,7 @@ PROBAND_DB;proband.inquiryValues.value.timeValue;LONG;;;;;;;;;proband.inquiryVal
 #PROBAND_DB;proband.inquiryValues.value.selectionValues.id;LONG;InputFieldSelectionSetValue;getAllInquiryInputFieldSelectionSetValues;getUniqueName;getId;;;;;proband.inquiryValues.value.selectionValues.id;EQ, NE
 PROBAND_DB;proband.inquiryValues.value.selectionValues.id;LONG;InputFieldSelectionSetValue;;getUniqueName;;completeInquiryInputFieldSelectionSetValue;ctsms.InputFieldSelectionSetValue;;;proband.inquiryValues.value.selectionValues.id;EQ, NE
 PROBAND_DB;proband.inquiryValues.value.selectionValues.value;STRING;;;;;completeInputFieldSelectionSetValueValue;;;;proband.inquiryValues.value.selectionValues.value;EQ, NE, GT, GE, LT, LE, LIKE, ILIKE
-PROBAND_DB;proband.inquiryValues.value.selectionValues;LONG;;;;;;;;;proband.inquiryValues.value.selectionValues;IS_EMPTY, IS_NOT_EMPTY, SIZE_EQ, SIZE_NE, SIZE_GT, SIZE_GE, SIZE_LT, SIZE_LE
+PROBAND_DB;proband.inquiryValues.value.selectionValues;LONG;;;;;;;;;proband.inquiryValues.value.selectionValues;IS_NULL, IS_EMPTY, IS_NOT_EMPTY, SIZE_EQ, SIZE_NE, SIZE_GT, SIZE_GE, SIZE_LT, SIZE_LE
 #PROBAND_DB;proband.trialParticipations.tagValues.tag.id;LONG;ProbandListEntryTag;getAllProbandListEntryTags;getUniqueName;getId;;;;;proband.trialParticipations.tagValues.tag.id;EQ, NE
 PROBAND_DB;proband.trialParticipations.tagValues.tag.id;LONG;ProbandListEntryTag;;getUniqueName;;completeProbandListEntryTag;ctsms.ProbandListEntryTag;;;proband.trialParticipations.tagValues.tag.id;EQ, NE
 #PROBAND_DB;proband.trialParticipations.tagValues.tag.field.id;LONG;InputField;getAllProbandListEntryTagInputFields;getName;getId;;;;;proband.trialParticipations.tagValues.tag.field.id;EQ, NE
@@ -290,6 +290,7 @@ MASS_MAIL_DB;massMail.status.id;LONG;MassMailStatusType;;;;;;getFilterMassMailSt
 MASS_MAIL_DB;massMail.type.id;LONG;MassMailType;;;;;;getFilterMassMailTypes;;massMail.type.id;EQ, NE
 MASS_MAIL_DB;massMail.trial.id;LONG;;;;;;;;TRIAL_DB;massMail.trial.id;EQ, NE
 MASS_MAIL_DB;massMail.probandListStatus.id;LONG;;;;;;;getFilterProbandListStatusTypes;;massMail.probandListStatus.id;EQ, NE
+MASS_MAIL_DB;massMail.visitScheduleItems.id;LONG;VisitScheduleItem;;getName;;completeVisitScheduleItem;ctsms.VisitScheduleItem;;;massMail.visitScheduleItems.id;EQ, NE
 MASS_MAIL_DB;massMail.fromAddress;STRING;;;;;;;;;massMail.fromAddress;EQ, NE, GT, GE, LT, LE, LIKE, ILIKE
 MASS_MAIL_DB;massMail.fromName;STRING;;;;;;;;;massMail.fromName;EQ, NE, GT, GE, LT, LE, LIKE, ILIKE
 MASS_MAIL_DB;massMail.locale;STRING;;;;;;;getFilterLocales;;massMail.locale;EQ, NE
