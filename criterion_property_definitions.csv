@@ -135,11 +135,11 @@ PROBAND_DB;proband.personParticulars.lastNameIndex;STRING;;;;;;;;;proband.person
 PROBAND_DB;proband.personParticulars.dateOfBirthHash;DATE_HASH;;;;;;;;;proband.personParticulars.dateOfBirthHash;EQ, NE
 PROBAND_DB;proband.personParticulars.yearOfBirth;LONG;;;;;;;;;proband.personParticulars.yearOfBirth;EQ, NE, GT, GE, LT, LE
 PROBAND_DB;proband.personParticulars.gender;STRING;Sex;;;;;;getFilterSexes;;proband.personParticulars.gender;EQ, NE
-PROBAND_DB;proband.personParticulars.alias;STRING;;;;;;;;;proband.personParticulars.alias;EQ, NE, GT, GE, LT, LE, LIKE, ILIKE
+PROBAND_DB;proband.personParticulars.alias;STRING;;;;;;;;;proband.personParticulars.alias;IS_NULL, EQ, NE, GT, GE, LT, LE, LIKE, ILIKE
 PROBAND_DB;proband.animalParticulars.animalName;STRING;;;;;;;;;proband.animalParticulars.animalName;EQ, NE, GT, GE, LT, LE, LIKE, ILIKE
 PROBAND_DB;proband.animalParticulars.dateOfBirth;DATE;;;;;;;;;proband.animalParticulars.dateOfBirth;EQ, NE, GT, GE, LT, LE
 PROBAND_DB;proband.animalParticulars.gender;STRING;Sex;;;;;;getFilterSexes;;proband.animalParticulars.gender;EQ, NE
-PROBAND_DB;proband.animalParticulars.alias;STRING;;;;;;;;;proband.animalParticulars.alias;EQ, NE, GT, GE, LT, LE, LIKE, ILIKE
+PROBAND_DB;proband.animalParticulars.alias;STRING;;;;;;;;;proband.animalParticulars.alias;IS_NULL, EQ, NE, GT, GE, LT, LE, LIKE, ILIKE
 #PROBAND_DB;proband.available;BOOLEAN;;;;;;;;;proband.available;EQ, NE
 PROBAND_DB;proband.person;BOOLEAN;;;;;;;;;proband.person;EQ, NE
 PROBAND_DB;proband.blinded;BOOLEAN;;;;;;;;;proband.blinded;EQ, NE
@@ -189,6 +189,7 @@ PROBAND_DB;proband.inquiryValues;LONG;;;;;;;;;proband.inquiryValues;IS_EMPTY, IS
 PROBAND_DB;proband.inquiryValues.inquiry.trial.id;LONG;;;;;;;;TRIAL_DB;proband.inquiryValues.inquiry.trial.id;EQ, NE
 PROBAND_DB;proband.inquiryValues.modifiedTimestamp;TIMESTAMP;;;;;;;;;proband.inquiryValues.modifiedTimestamp;EQ, NE, GT, GE, LT, LE
 PROBAND_DB;proband.inquiryValues.modifiedTimestamp;STRING;VariablePeriod;;;;;;getFilterVariablePeriodsWoExplicit;;proband.inquiryValues.modifiedTimestampByPeriod;IS_EQ_NOW, IS_NE_NOW, IS_GT_NOW, IS_GE_NOW, IS_LT_NOW, IS_LE_NOW, IS_GT_NOW_PLUS_PERIOD, IS_GE_NOW_PLUS_PERIOD, IS_EQ_NOW_PLUS_PERIOD, IS_NE_NOW_PLUS_PERIOD, IS_LT_NOW_PLUS_PERIOD, IS_LE_NOW_PLUS_PERIOD, IS_GT_NOW_MINUS_PERIOD, IS_GE_NOW_MINUS_PERIOD, IS_EQ_NOW_MINUS_PERIOD, IS_NE_NOW_MINUS_PERIOD, IS_LT_NOW_MINUS_PERIOD, IS_LE_NOW_MINUS_PERIOD
+PROBAND_DB;proband.inquiryValues.modifiedUser.id;LONG;;;;;;;;USER_DB;proband.inquiryValues.modifiedUser.id;EQ, NE
 PROBAND_DB;proband.inquiryValues.value.stringValue;STRING;;;;;completeInputFieldTextValue;;;;proband.inquiryValues.value.stringValue;EQ, NE, GT, GE, LT, LE, LIKE, ILIKE
 PROBAND_DB;proband.inquiryValues.value.booleanValue;BOOLEAN;;;;;;;;;proband.inquiryValues.value.booleanValue;EQ, NE
 PROBAND_DB;proband.inquiryValues.value.longValue;LONG;;;;;;;;;proband.inquiryValues.value.longValue;EQ, NE, GT, GE, LT, LE
@@ -211,6 +212,7 @@ PROBAND_DB;proband.trialParticipations.tagValues;LONG;;;;;;;;;proband.trialParti
 #PROBAND_DB;proband.trialParticipations.trial.id;LONG;;;;;;;;TRIAL_DB;proband.trialParticipations.trial.id;EQ, NE
 PROBAND_DB;proband.trialParticipations.tagValues.modifiedTimestamp;TIMESTAMP;;;;;;;;;proband.trialParticipations.tagValues.modifiedTimestamp;EQ, NE, GT, GE, LT, LE
 PROBAND_DB;proband.trialParticipations.tagValues.modifiedTimestamp;STRING;VariablePeriod;;;;;;getFilterVariablePeriodsWoExplicit;;proband.trialParticipations.tagValues.modifiedTimestampByPeriod;IS_EQ_NOW, IS_NE_NOW, IS_GT_NOW, IS_GE_NOW, IS_LT_NOW, IS_LE_NOW, IS_GT_NOW_PLUS_PERIOD, IS_GE_NOW_PLUS_PERIOD, IS_EQ_NOW_PLUS_PERIOD, IS_NE_NOW_PLUS_PERIOD, IS_LT_NOW_PLUS_PERIOD, IS_LE_NOW_PLUS_PERIOD, IS_GT_NOW_MINUS_PERIOD, IS_GE_NOW_MINUS_PERIOD, IS_EQ_NOW_MINUS_PERIOD, IS_NE_NOW_MINUS_PERIOD, IS_LT_NOW_MINUS_PERIOD, IS_LE_NOW_MINUS_PERIOD
+PROBAND_DB;proband.trialParticipations.tagValues.modifiedUser.id;LONG;;;;;;;;USER_DB;proband.trialParticipations.tagValues.modifiedUser.id;EQ, NE
 PROBAND_DB;proband.trialParticipations.tagValues.value.stringValue;STRING;;;;;completeInputFieldTextValue;;;;proband.trialParticipations.tagValues.value.stringValue;EQ, NE, GT, GE, LT, LE, LIKE, ILIKE
 PROBAND_DB;proband.trialParticipations.tagValues.value.booleanValue;BOOLEAN;;;;;;;;;proband.trialParticipations.tagValues.value.booleanValue;EQ, NE
 PROBAND_DB;proband.trialParticipations.tagValues.value.longValue;LONG;;;;;;;;;proband.trialParticipations.tagValues.value.longValue;EQ, NE, GT, GE, LT, LE
@@ -236,6 +238,7 @@ PROBAND_DB;proband.trialParticipations.ecrfValues;LONG;;;;;;;;;proband.trialPart
 #PROBAND_DB;proband.trialParticipations.trial.id;LONG;;;;;;;;TRIAL_DB;proband.trialParticipations.trial.id;EQ, NE
 PROBAND_DB;proband.trialParticipations.ecrfValues.modifiedTimestamp;TIMESTAMP;;;;;;;;;proband.trialParticipations.ecrfValues.modifiedTimestamp;EQ, NE, GT, GE, LT, LE
 PROBAND_DB;proband.trialParticipations.ecrfValues.modifiedTimestamp;STRING;VariablePeriod;;;;;;getFilterVariablePeriodsWoExplicit;;proband.trialParticipations.ecrfValues.modifiedTimestampByPeriod;IS_EQ_NOW, IS_NE_NOW, IS_GT_NOW, IS_GE_NOW, IS_LT_NOW, IS_LE_NOW, IS_GT_NOW_PLUS_PERIOD, IS_GE_NOW_PLUS_PERIOD, IS_EQ_NOW_PLUS_PERIOD, IS_NE_NOW_PLUS_PERIOD, IS_LT_NOW_PLUS_PERIOD, IS_LE_NOW_PLUS_PERIOD, IS_GT_NOW_MINUS_PERIOD, IS_GE_NOW_MINUS_PERIOD, IS_EQ_NOW_MINUS_PERIOD, IS_NE_NOW_MINUS_PERIOD, IS_LT_NOW_MINUS_PERIOD, IS_LE_NOW_MINUS_PERIOD
+PROBAND_DB;proband.trialParticipations.ecrfValues.modifiedUser.id;LONG;;;;;;;;USER_DB;proband.trialParticipations.ecrfValues.modifiedUser.id;EQ, NE
 PROBAND_DB;proband.trialParticipations.ecrfValues.value.stringValue;STRING;;;;;completeInputFieldTextValue;;;;proband.trialParticipations.ecrfValues.value.stringValue;EQ, NE, GT, GE, LT, LE, LIKE, ILIKE
 PROBAND_DB;proband.trialParticipations.ecrfValues.value.booleanValue;BOOLEAN;;;;;;;;;proband.trialParticipations.ecrfValues.value.booleanValue;EQ, NE
 PROBAND_DB;proband.trialParticipations.ecrfValues.value.longValue;LONG;;;;;;;;;proband.trialParticipations.ecrfValues.value.longValue;EQ, NE, GT, GE, LT, LE
