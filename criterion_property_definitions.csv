@@ -25,7 +25,7 @@ STAFF_DB;staff.department.id;LONG;Department;;getName;;completeDepartment;ctsms.
 STAFF_DB;staff.category.id;LONG;StaffCategory;;;;;;getFilterStaffCategories;;staff.category.id;EQ, NE
 STAFF_DB;staff.personParticulars.firstName;STRING;;;;;;;;;staff.personParticulars.firstName;EQ, NE, GT, GE, LT, LE, LIKE, ILIKE
 STAFF_DB;staff.personParticulars.lastName;STRING;;;;;;;;;staff.personParticulars.lastName;EQ, NE, GT, GE, LT, LE, LIKE, ILIKE
-STAFF_DB;staff.personParticulars.cvAcademicTitle;STRING;;;;;;;;;staff.personParticulars.cvAcademicTitle;EQ, NE, GT, GE, LT, LE, LIKE, ILIKE
+STAFF_DB;staff.personParticulars.cvAcademicTitle;STRING;;;;;completeTitle;;;;staff.personParticulars.cvAcademicTitle;EQ, NE, GT, GE, LT, LE, LIKE, ILIKE
 STAFF_DB;staff.organisationParticulars.organisationName;STRING;;;;;;;;;staff.organisationParticulars.organisationName;EQ, NE, GT, GE, LT, LE, LIKE, ILIKE
 STAFF_DB;staff.personParticulars.dateOfBirth;DATE;;;;;;;;;staff.personParticulars.dateOfBirth;EQ, NE, GT, GE, LT, LE
 STAFF_DB;staff.person;BOOLEAN;;;;;;;;;staff.person;EQ, NE
