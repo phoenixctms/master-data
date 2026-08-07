@@ -24,9 +24,12 @@ STAFF_DB;staff.id;LONG;;;;;;;;;staff.id;EQ, NE, TRUE
 STAFF_DB;staff.department.id;LONG;Department;;getName;;completeDepartment;ctsms.Department;;;staff.department.id;EQ, NE, IS_EQ_CONTEXT_USER_DEPARTMENT_ID
 STAFF_DB;staff.category.id;LONG;StaffCategory;;;;;;getFilterStaffCategories;;staff.category.id;EQ, NE
 STAFF_DB;staff.personParticulars.firstName;STRING;;;;;;;;;staff.personParticulars.firstName;EQ, NE, GT, GE, LT, LE, LIKE, ILIKE
+STAFF_DB;staff.personParticulars.firstNameNormalized;STRING;;;;;;;;;staff.personParticulars.firstNameNormalized;EQ, NE, GT, GE, LT, LE, LIKE, ILIKE
 STAFF_DB;staff.personParticulars.lastName;STRING;;;;;;;;;staff.personParticulars.lastName;EQ, NE, GT, GE, LT, LE, LIKE, ILIKE
+STAFF_DB;staff.personParticulars.lastNameNormalized;STRING;;;;;;;;;staff.personParticulars.lastNameNormalized;EQ, NE, GT, GE, LT, LE, LIKE, ILIKE
 STAFF_DB;staff.personParticulars.cvAcademicTitle;STRING;;;;;completeTitle;;;;staff.personParticulars.cvAcademicTitle;EQ, NE, GT, GE, LT, LE, LIKE, ILIKE
 STAFF_DB;staff.organisationParticulars.organisationName;STRING;;;;;;;;;staff.organisationParticulars.organisationName;EQ, NE, GT, GE, LT, LE, LIKE, ILIKE
+STAFF_DB;staff.organisationParticulars.organisationNameNormalized;STRING;;;;;;;;;staff.organisationParticulars.organisationNameNormalized;EQ, NE, GT, GE, LT, LE, LIKE, ILIKE
 STAFF_DB;staff.personParticulars.dateOfBirth;DATE;;;;;;;;;staff.personParticulars.dateOfBirth;EQ, NE, GT, GE, LT, LE
 STAFF_DB;staff.person;BOOLEAN;;;;;;;;;staff.person;EQ, NE
 STAFF_DB;staff.employee;BOOLEAN;;;;;;;;;staff.employee;EQ, NE
@@ -130,13 +133,16 @@ INPUT_FIELD_DB;inputField.deferredDelete;BOOLEAN;;;;;;;;;inputField.deferredDele
 PROBAND_DB;proband.id;LONG;;;;;;;;;proband.id;EQ, NE, TRUE
 PROBAND_DB;proband.department.id;LONG;Department;;getName;;completeDepartment;ctsms.Department;;;proband.department.id;EQ, NE, IS_EQ_CONTEXT_USER_DEPARTMENT_ID
 PROBAND_DB;proband.category.id;LONG;ProbandCategory;;;;;;getFilterProbandCategories;;proband.category.id;EQ, NE
-PROBAND_DB;proband.personParticulars.firstNameHash;STRING_HASH;;;;;;;;;proband.personParticulars.firstNameHash;EQ, NE
-PROBAND_DB;proband.personParticulars.lastNameHash;STRING_HASH;;;;;;;;;proband.personParticulars.lastNameHash;EQ, NE
+PROBAND_DB;proband.personParticulars.firstNameHash;STRING_HASH;;;;;;;;;proband.personParticulars.firstNameHash;EQ, NE, LIKE, ILIKE
+PROBAND_DB;proband.personParticulars.firstNameNormalizedHash;STRING_HASH;;;;;;;;;proband.personParticulars.firstNameNormalizedHash;EQ, NE, LIKE, ILIKE
+PROBAND_DB;proband.personParticulars.lastNameHash;STRING_HASH;;;;;;;;;proband.personParticulars.lastNameHash;EQ, NE, LIKE, ILIKE
+PROBAND_DB;proband.personParticulars.lastNameNormalizedHash;STRING_HASH;;;;;;;;;proband.personParticulars.lastNameNormalizedHash;EQ, NE, LIKE, ILIKE
 PROBAND_DB;proband.personParticulars.lastNameIndex;STRING;;;;;;;;;proband.personParticulars.lastNameIndex;EQ, NE, GT, GE, LT, LE, LIKE, ILIKE
 PROBAND_DB;proband.personParticulars.dateOfBirthHash;DATE_HASH;;;;;;;;;proband.personParticulars.dateOfBirthHash;EQ, NE
 PROBAND_DB;proband.personParticulars.yearOfBirth;LONG;;;;;;;;;proband.personParticulars.yearOfBirth;EQ, NE, GT, GE, LT, LE
 PROBAND_DB;proband.personParticulars.gender;STRING;Sex;;;;;;getFilterSexes;;proband.personParticulars.gender;EQ, NE
 PROBAND_DB;proband.personParticulars.alias;STRING;;;;;;;;;proband.personParticulars.alias;IS_NULL, EQ, NE, GT, GE, LT, LE, LIKE, ILIKE
+PROBAND_DB;proband.personParticulars.aliasNormalized;STRING;;;;;;;;;proband.personParticulars.aliasNormalized;IS_NULL, EQ, NE, GT, GE, LT, LE, LIKE, ILIKE
 PROBAND_DB;proband.animalParticulars.animalName;STRING;;;;;;;;;proband.animalParticulars.animalName;EQ, NE, GT, GE, LT, LE, LIKE, ILIKE
 PROBAND_DB;proband.animalParticulars.dateOfBirth;DATE;;;;;;;;;proband.animalParticulars.dateOfBirth;EQ, NE, GT, GE, LT, LE
 PROBAND_DB;proband.animalParticulars.gender;STRING;Sex;;;;;;getFilterSexes;;proband.animalParticulars.gender;EQ, NE
