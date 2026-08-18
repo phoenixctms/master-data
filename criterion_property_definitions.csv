@@ -186,7 +186,7 @@ PROBAND_DB;proband.procedures.stop;STRING;VariablePeriod;;;;;;getFilterVariableP
 PROBAND_DB;proband.procedures;LONG;;;;;;;;;proband.procedures;IS_EMPTY, IS_NOT_EMPTY, SIZE_EQ, SIZE_NE, SIZE_GT, SIZE_GE, SIZE_LT, SIZE_LE
 PROBAND_DB;proband.addresses.type.id;LONG;AddressType;getAllAddressTypes;getName;getId;;;;;proband.addresses.type.id;EQ, NE
 PROBAND_DB;proband.addresses.cityNameHash;STRING_HASH;;;;;completeCityName;;;;proband.addresses.cityNameHash;EQ, NE
-PROBAND_DB;proband.addresses.zipCodeHash;STRING_HASH;;;;;completeZipCode;;;;proband.addresses.zipCodeHash;EQ, NE
+PROBAND_DB;proband.addresses.zipCodeHash;STRING_HASH;;;;;completeZipCode;;;;proband.addresses.zipCodeHash;EQ, NE, LIKE, ILIKE
 PROBAND_DB;proband.addresses;LONG;;;;;;;;;proband.addresses;IS_EMPTY, IS_NOT_EMPTY, SIZE_EQ, SIZE_NE, SIZE_GT, SIZE_GE, SIZE_LT, SIZE_LE
 #PROBAND_DB;proband.inquiryValues.inquiry.id;LONG;Inquiry;getAllInquiries;getUniqueName;getId;;;;;proband.inquiryValues.inquiry.id;EQ, NE
 PROBAND_DB;proband.inquiryValues.inquiry.id;LONG;Inquiry;;getUniqueName;;completeInquiry;ctsms.Inquiry;;;proband.inquiryValues.inquiry.id;EQ, NE
