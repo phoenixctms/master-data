@@ -299,7 +299,7 @@ MASS_MAIL_DB;massMail.start;STRING;VariablePeriod;;;;;;getFilterVariablePeriodsW
 MASS_MAIL_DB;massMail.status.id;LONG;MassMailStatusType;;;;;;getFilterMassMailStatusTypes;;massMail.status.id;EQ, NE
 MASS_MAIL_DB;massMail.type.id;LONG;MassMailType;;;;;;getFilterMassMailTypes;;massMail.type.id;EQ, NE
 MASS_MAIL_DB;massMail.trial.id;LONG;;;;;;;;TRIAL_DB;massMail.trial.id;EQ, NE
-MASS_MAIL_DB;massMail.probandListStatus.id;LONG;;;;;;;getFilterProbandListStatusTypes;;massMail.probandListStatus.id;EQ, NE
+MASS_MAIL_DB;massMail.probandListStates.id;LONG;;;;;;;getFilterProbandListStatusTypes;;massMail.probandListStates.id;EQ, NE
 MASS_MAIL_DB;massMail.visitScheduleItems.id;LONG;VisitScheduleItem;;getName;;completeVisitScheduleItem;ctsms.VisitScheduleItem;;;massMail.visitScheduleItems.id;EQ, NE
 MASS_MAIL_DB;massMail.fromAddress;STRING;;;;;;;;;massMail.fromAddress;EQ, NE, GT, GE, LT, LE, LIKE, ILIKE
 MASS_MAIL_DB;massMail.fromName;STRING;;;;;;;;;massMail.fromName;EQ, NE, GT, GE, LT, LE, LIKE, ILIKE
