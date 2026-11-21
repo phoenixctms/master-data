@@ -769,6 +769,9 @@ org.phoenixctms.ctsms.service.shared.InputFieldService.getInquiryMaxSelectionSet
 org.phoenixctms.ctsms.service.shared.InputFieldService.getEcrfFieldValueCount;;;;;;;;INPUT_FIELD_MASTER:INPUT_FIELD_VIEW
 org.phoenixctms.ctsms.service.shared.InputFieldService.getInputField;;;;;;;;INPUT_FIELD_MASTER:INPUT_FIELD_VIEW
 org.phoenixctms.ctsms.service.shared.InputFieldService.getInputFieldList;;;;;;;;INPUT_FIELD_VIEW:INPUT_FIELD_MASTER
+org.phoenixctms.ctsms.service.shared.InputFieldService.getInputFieldL10nMissingKeys;;;;;;;;INPUT_FIELD_MASTER:INPUT_FIELD_VIEW
+org.phoenixctms.ctsms.service.shared.InputFieldService.getInputFieldL10nText;;;;;;;;INPUT_FIELD_MASTER:INPUT_FIELD_VIEW
+org.phoenixctms.ctsms.service.shared.InputFieldService.setInputFieldL10nText;;;;;;;;INPUT_FIELD_MASTER
 org.phoenixctms.ctsms.service.shared.InputFieldService.getInputFieldValueCount;;;;;;;;INPUT_FIELD_MASTER:INPUT_FIELD_VIEW
 org.phoenixctms.ctsms.service.shared.InputFieldService.getInquiryList;;;;;;;;INPUT_FIELD_MASTER:INPUT_FIELD_VIEW
 org.phoenixctms.ctsms.service.shared.InputFieldService.getInquiryValueCount;;;;;;;;INPUT_FIELD_MASTER:INPUT_FIELD_VIEW
